@@ -124,6 +124,7 @@ class Blog extends BaseController
         if(isset($_POST['likes'])){
         $likee = !($this->likes);
         $like = $this->database()->query("INSERT INTO `posts` (liked) VALUES ('$likee') WHERE id = '$id'");
+        var_dump($like); die();
         echo json_encode($like);
         }
         }else {

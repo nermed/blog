@@ -27,8 +27,8 @@ body{
     cursor: pointer;
     user-select: none;
   }
-.like {
-    font-size: 20px;
+.likes {
+    font-size: 40px;
     cursor: pointer;
     user-select: none;
 }

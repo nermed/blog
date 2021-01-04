@@ -18,10 +18,17 @@
                 
             </div>
             <p><?= $post['body'] ?></p>
+            <div class="col-6">
             <div class="row">
+                    <div class="col-5">
+                    <p class="like">Si tu as aimé l'article, mettez un</p>
+                </div>
+                <div class="col-3 p-0 m-0" id='logo'>
+                    <i class="fa fa-thumbs-up likes"></i>
+                </div>
+            </div>
                 
-                <p class="like">Si tu as aimé l'article, mettez un</p>
-            <i class="fa fa-thumbs-up likes"></i>
+            
         </div>
             <div class="container">
         <h2>Commentaires</h2>

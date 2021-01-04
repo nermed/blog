@@ -33,12 +33,15 @@ integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKx
                 }
             })
     });
-    $(document).on('click', 'like', function(e){
+    $(document).on('click', '.likes', function(e){
         e.preventDefault();
+        console.log($('#logo'))
+            $('#logo').removeClass('fa-thumbs-up')
+            $('#logo').addClass('fa-thumbs-down')
         page = document.location.href;
         idPage = page.substring(page.lastIndexOf( "/" )+1 );
         $.ajax({
-            url: '<?= base_url() ?>/blog/likes/'+idPage,
+            url: '<?= base_url() ?>/blog/liked/'+idPage,
             type: 'post',
             dataType: 'json',
             success: function(data){

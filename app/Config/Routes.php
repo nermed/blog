@@ -41,7 +41,7 @@ $routes->match(['get', 'post'], '/comment/comment/(:any)', 'Comment::comment/$1'
 $routes->get('/blog/comment', 'Blog::comment');
 $routes->get('/comment/fetch/(:any)', 'Comment::fetch/$1');
 $routes->get('/blog/delete/(:any)', 'Blog::delete/$1');
-$routes->get('/blog/likes/(:any)', 'Blog::likes/$1');
+$routes->get('/blog/liked/(:any)', 'Blog::liked/$1');
 $routes->get('/blog/fetch', 'Blog::fetch');
 $routes->get('/admin/(:any)', 'Admin::list/$1');
 $routes->get('(:any)', 'Pages::all/$1');
